@@ -10,8 +10,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
 	background-color: #FCF3E7;
-	width: 70%;
-	margin:auto;
+}
+
+#container {
+	margin: auto;
 }
 
 p {
@@ -26,7 +28,7 @@ h1 {
 	text-align: center;
 }
 
-h3 {
+h2 {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 24px;
 
@@ -42,10 +44,42 @@ h3 {
 	background-color: #f9e8d2;
 }
 
-#pets ul {
-	margin-right: 200px;
-}
-
 ul p {
 	font-size: 16px;
+}
+
+
+
+/* media query up to 399 px */
+
+@media ( max-width: 399px) {
+	#container {
+		background-color: green;
+	}
+}
+
+/* media query 400 - 500px */
+
+@media (min-width: 400px) and (max-width: 599px) {
+	#container {
+		width: 90%;
+	}
+	#wideRightMargin3 {
+		margin-right: 20%;
+	}
+}
+
+@media (min-width: 600px) {
+	#container {
+		width: 80%;
+	}
+	#wideRightMargin2, #wideRightMargin3 {
+		margin-right: 25%;
+	}
+}
+
+@media (min-width: 975px) {
+	#pets li {
+		margin-right: 25%;
+	}
 }
