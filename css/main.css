@@ -8,18 +8,24 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+/* setup background, fonts */
+
 body {
 	background-color: #FCF3E7;
 }
 
 #container {
 	margin: auto;
+	width: 90%;
 }
 
 p {
 	font-family: 'Muli', sans-serif;
 	font-size: 18px;
+}
 
+p.introText {
+	font-weight: bolder;
 }
 
 h1 {
@@ -34,52 +40,91 @@ h2 {
 
 }
 
+/* style pets section */
+
 #pets {
 	padding: 20px;
-	background-image: url("../img/cat1.png");
-	background-size: 35%;
-	background-repeat: no-repeat;
-	background-position: right bottom;
 	border-bottom: 5px solid black;
-	background-color: #f9e8d2;
+	background-color: #f6ddbc;
 }
 
 ul p {
 	font-size: 16px;
 }
 
-
-
-/* media query up to 399 px */
-
-@media ( max-width: 399px) {
-	#container {
-		background-color: green;
-	}
+#pets img {
+	max-width: 180px;
+	float: right;
 }
 
-/* media query 400 - 500px */
 
-@media (min-width: 400px) and (max-width: 599px) {
-	#container {
-		width: 90%;
-	}
-	#wideRightMargin3 {
-		margin-right: 20%;
-	}
+/* style big cats section */
+
+#bigCats {
+	padding: 20px;
+	background-color:  #f3d1a5;
+	border-bottom: 5px solid black;
 }
 
-@media (min-width: 600px) {
-	#container {
-		width: 80%;
-	}
-	#wideRightMargin2, #wideRightMargin3 {
-		margin-right: 25%;
-	}
+#flexBox2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-@media (min-width: 975px) {
-	#pets li {
-		margin-right: 25%;
+#flexBox2 > article {
+	padding: 20px;
+	width: 240px;
+}
+
+article p {
+	font-size: 16px;
+}
+
+
+#bigCats article img {
+	width: 100%;
+}
+
+#bigCats article {
+	border: 1px solid black;
+	margin: 2px;
+}
+
+/* style fictional felines section */
+
+#fictionalFelines {
+	padding: 20px;
+	background-color: #f0c68f;
+	border-bottom: 5px solid black;
+}
+
+#flexBox3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+
+#flexBox3 > .catImage {
+	width: 130px;
+	padding: 10px;
+}
+
+#flexBox3 img {
+	width: 80%;
+}
+
+#flexBox3 p {
+	text-align: center;
+}
+
+
+
+
+@media (max-width: 435px) {
+	#pets img {
+		max-width: 120px;
 	}
+
 }
