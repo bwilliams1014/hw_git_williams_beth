@@ -10,18 +10,51 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
 
-
-
 </head>
+
 <body>
 	<div id="container">
 
+		<!-- header -->
+		<header id="header">
+			<h1>CATS! CATS! CATS!</h1>
+		</header>
+
+		<!-- navigation -->
+		<nav>
+			<div class="navItem">
+				<a href="#header">
+				<img src="img/pawprint.png" alt="Home" title="Home">
+				<p>CATS! Home</p>
+				</a>
+			</div>
+			<div class="navItem">
+				<a href="#pets">
+				<img src="img/pawprint.png" alt="Cool Pets" title="Cool Pets">
+				<p>Cool Pets</p>
+				</a>	
+			</div>
+			<div class="navItem">
+				<a href="#bigCats">
+				<img src="img/pawprint.png" alt="Big Cats" title="Big Cats">
+				<p>Big Cats</p>
+				</a>
+			</div>			
+			<div class="navItem">
+				<a href="#fictionalFelines">
+				<img src="img/pawprint.png" alt="Fictional Felines" title="Fictional Felines">
+				<p>Fictional Felines</p>
+				</a>
+			</div>
+		</nav>
+
+		<!-- pets section -->
 		<section id="pets">
 
 			<h1>Cats are the Coolest Pets</h1>
 
 				<p class="introText">Cats are amazing, just look at YouTube! Only cats are hilarious enough to be the biggest celebrities on the web. What is it about cats that makes them cool? Here are the top three reasons why cats rule:</p>
-				<img src="img/cat1.png" alt="gray cat with blue eyes" title="cat">
+				<img id="cat" src="img/cat1.png" alt="gray cat with blue eyes" title="cat">
 
 				<ul>
 					<li><h2>Cats are independent.</h2>
@@ -34,8 +67,18 @@
 						<p id="wideRightMargin3">Cats bathe themselves. Only very rarely do some cats need a bath. Cats don't smell bad either like dogs do. You don't feel like you need to wash your hands after petting them.</p>
 					</li>
 				</ul>
+
+				<!-- return to home navigation -->
+				<div class="navHome">
+					<a href="#header">
+					<img src="img/pawprint.png" alt="Home" title="Home">
+					<p>Home</p>
+					</a>
+				</div>
+
 		</section>
 
+		<!-- big cats section -->
 	    <section id="bigCats">
 
 	      	<h1>Big Cats are Awesome</h1>
@@ -43,10 +86,10 @@
 	      		<p class="introText">Who isn't fascinated by the big cats? Lions, tigers, jaguars, leopards, and snow leopards make up the genus panthera; but only four of the five can roar. While lions are the loudest and can be heard up to 5 miles away, snow leopards can't roar at all. Here are some more interesting facts about the big cats and some of their cousins:</p>
 
 	      	<div id="flexBox2">
-		      	<article id="lions" alt="lion family, male, female, and cub" title="lion family">
+		      	<article id="lions">
 		      		<h2>Lions</h2>
 		      			<p>Lions are native to Africa and parts of India. They are unique in that the male lion has a mane. Lions live in family groups called prides and share hunting and cub rearing duties. All of the big cats, including lions, are listed as endangered, near threatened, or vulnerable.</p>
-		     	 	<img src="img/lions.png">
+		     	 	<img src="img/lions.png" alt="lion family, male, female, and cub" title="lion family">
 		      	</article>
 
 		      	<article id="tigers">
@@ -57,17 +100,27 @@
 
 		      	<article id="cheetahs" >
 			      	<h2>Cheetahs</h2>
-			      		<p>Although technically not a part of the big cat family, cheetahs are amazing because they are the fastest land animals. They can run at speeds up to 75 miles per hour. Unlike tigers, cheetahs are hard to tell apart. The entire species was almost wiped out in the last ice age, so the inbreeding that occurred among those that were left has made them nearly indistinguishable from each other.</p>
+			      		<p>Although technically not a part of the big cat family, cheetahs are amazing because they are the fastest land animals. They can run at speeds up to 75 miles per hour! Unlike tigers, cheetahs are hard to tell apart. The entire species was almost wiped out in the last ice age, so the inbreeding that occurred among those that were left has made them nearly indistinguishable from each other.</p>
 			      	<img src="img/cheetah.png" alt="cheetah" title="cheetah">
 		      	</article>
 	      	</div>
+
+				<!-- return to home navigation -->
+	      	<div class="navHome">
+					<a href="#header">
+					<img src="img/pawprint.png" alt="Home" title="Home">
+					<p>Home</p>
+					</a>
+				</div>
+
 		</section>
 
+		<!-- fictional cats section -->
 		<section id="fictionalFelines">
 
 			<h1>Famous Fictional Felines</h1>
 
-				<p class="introText">Cats are so great in real life, they have been immortalized in books, movies, comics, and song. Even from the youngest age, children learn to read The Cat in the Hat and watch Tigger bouncing through the Hundred Acre Wood. In music we have Cat Scratch Fever, in movies we have Simba, and of course Garfield was the ultimate crumudgeon before Grumpy Cat came along. Check out these images of some of our greatest feline cultural icons:</p>
+				<p class="introText">Cats are so great in real life, they have been immortalized in books, movies, comics, and song. Even from the youngest age, children learn to read The Cat in the Hat and watch Tigger bouncing through the Hundred Acre Wood. In music we have Cat Scratch Fever, in movies we have Simba, and of course Garfield was the ultimate curmudgeon  before Grumpy Cat came along. Check out these images of some of our greatest feline cultural icons:</p>
 
 				<div id="flexBox3">
 					<div class="catImage">
@@ -91,9 +144,17 @@
 						<p>Simba</p>
 					</div>
 					<div class="catImage">
-						<img src="img/tigger.png" align="Tigger from Winnie the Pooh" title="Tigger">
+						<img src="img/tigger.png" alt="Tigger from Winnie the Pooh" title="Tigger">
 						<p>Tigger</p>
 					</div>
+				</div>
+
+				<!-- return to home navigation -->
+				<div class="navHome">
+					<a href="#header">
+					<img src="img/pawprint.png" alt="Home" title="Home">
+					<p>Home</p>
+					</a>
 				</div>
 
 		</section>
